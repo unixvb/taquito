@@ -3,7 +3,7 @@ import { importKey } from '@taquito/signer';
 import { knownContract } from './data/knownContract';
 import { knownBigMapContract } from './data/knownBigMapContract';
 
-const provider = 'https://api.tez.ie/rpc/florencenet';
+const provider = 'http://localhost:8732/';
 
 async function example() {
     const tezos = new TezosToolkit(provider);
