@@ -1,4 +1,5 @@
 {
+  "version": "14.1.0",
   "private": true,
   "scripts": {
     "build": "nx run-many --target=build --no-private",
