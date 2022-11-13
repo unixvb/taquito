@@ -291,8 +291,10 @@ export class OperationBatch extends OperationEmitter {
    * @param params Optionally specify the source of the operation
    */
   async send(params?: { source?: string }) {
+    console.log('send');
     const publicKeyHash = await this.signer.publicKeyHash();
     const publicKey = await this.signer.publicKey();
+    console.log('estimate');
     const estimates = await this.estimator.batch(this.operations);
 
     const revealNeeded = await this.isRevealOpNeeded(this.operations, publicKeyHash);
