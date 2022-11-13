@@ -1,4 +1,5 @@
 {
+  "name": "unixvb-taquito",
   "version": "14.1.0",
   "private": true,
   "scripts": {
